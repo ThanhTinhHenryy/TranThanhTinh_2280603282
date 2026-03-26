@@ -1,0 +1,17 @@
+name: Thu nghiem doc file README
+
+on: 
+  push:
+    branches: ["main"]
+
+jobs:
+  thuc_hanh_doc_file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bước 1 - Xin Chào
+        run: echo "Hello World"
+      - name: Bước 2 - Tải Code
+        uses: actions/checkout@v6
+      - name: Bước 3 - Đọc file
+        run: cat README.md
